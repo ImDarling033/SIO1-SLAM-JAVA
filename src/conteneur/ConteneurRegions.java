@@ -40,7 +40,12 @@ public class ConteneurRegions {
 	 * @return un objet Region dont le code est égal à celui passé en paramètre (ou null)
 	 */
 	public Region donneRegionDepuisCodeInsee(int unCodeInsee) {
-            	return null;
+	    for (int region=0;region<this.toutesLesRegions.size();region++) {
+	        if (unCodeInsee==this.toutesLesRegions.get(region).getCodeInsee()) {
+	        	return this.toutesLesRegions.get(region);
+	        }
+	    }
+	    return null; 
 	}
 
 }

@@ -4,6 +4,8 @@
  */
 package metier;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author buffet
@@ -22,6 +24,7 @@ public class Region {
 	 * @param unCodeInsee le code insee de la nouvelle Region
 	 * @param unNom le nom de la nouvelle Region
 	 */
+	private ArrayList<departement> lesDepartements;
 	public Region(int unCodeInsee, String unNom){
 		this.codeInsee = unCodeInsee;
 		this.nom = unNom;
